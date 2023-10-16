@@ -1,0 +1,143 @@
+/* *{
+    font-family: montserrat;
+} */
+
+body {
+  background: f1fbff;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+main .content .content-description {
+  flex: 1 1;
+}
+
+main .content .content-description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+main .content .content-image {
+  flex: 1;
+  display: flex;
+}
+
+main .content .content-image img {
+  width: 300px;
+  margin: auto;
+  min-width: 250px;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+  font-family: sans-serif;
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link {
+  color: #000;
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+.about-text p {
+  text-align: justify;
+}
+
+.service .card-body i {
+  font-size: 50px;
+}
+
+.team .card-body i {
+  font-size: 20px;
+}
+
+.portofolio .card {
+  box-shadow: 20px 13px 40px -14px #595959;
+}
+
+.team .card {
+  box-shadow: 20px 13px 40px -14px #595959;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+
+  main .content .content-image {
+    order: -1;
+  }
+}
